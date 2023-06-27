@@ -54,7 +54,7 @@ boton.addEventListener("click",numeroAleatorio);
 */
 
 // PUNTO DOS -------------------------------------------------------------------------------------------------------------------------------
-
+/*
 class Persona
 {
     constructor(nombre, edad, dni, sexo, peso, altura, nacimiento)
@@ -230,8 +230,8 @@ function verGeneracion()
 botonGeneracion.addEventListener("click", verGeneracion);
 */
 
-//PUNTO TRES ----------------------------------------------------------------------------------------------------------------------------
-
+//PUNTO TRES ---------------------------------------------------------------------------------------------------------------------------
+/*
 const input = document.querySelector("#input");
 const btnAdd = document.querySelector("#btn-add");
 const ul = document.querySelector("ul");
@@ -256,6 +256,11 @@ function anadirLista(e)
         input.value = "";//borrar el impunt cuando pulsemos añadir 
     }
 
+    else
+    {
+        alert("ingrese una tarea");
+    }
+
 }
 
 btnAdd.addEventListener("click", anadirLista);
@@ -274,6 +279,40 @@ function crearBtnDelete()
 
     return btnDelete;   
 }
+*/
 
+//PUNTO CUATRO --------------------------------------------------------------------------------------------------------------------------
+
+/*
+function reloj() 
+{
+    horaActual = new Date();
+    hora = horaActual.getHours();
+    minutos = horaActual.getMinutes();
+    segundos = horaActual.getSeconds();
+
+    var horarioImprimible = ('00' + hora).slice(-2) + ":" +  ('00' + minutos).slice(-2) + ":" + ('00' + segundos).slice(-2) ;
+    document.querySelector("#horario").textContent = horarioImprimible;
+
+}
+
+setTimeout("reloj()",1000);
+setInterval(reloj, 1000);
+
+let fechaActual = new Date();    
+fechaActual.getDay();
+fechaActual.getDate();
+fechaActual.getMonth();
+fechaActual.getFullYear();
+
+let diasSemana = [ "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
+let dia = (diasSemana[fechaActual.getDay()]);
+
+let meses = [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+let mes = (meses[fechaActual.getMonth()]);
+
+let fechaImprimible = `${dia}, ${fechaActual.getDate()} de ${mes} de ${fechaActual.getFullYear()}`;
+document.querySelector("#fecha").textContent = fechaImprimible;
+*/
 
 
